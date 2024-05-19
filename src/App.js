@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/headers/Navbar';
+import './styles/tailwind.css';
+import './styles/globle.css';
+import { SectionOne } from './components/sections/section1';
+import { SectionTwo } from './components/sections/section2';
+import { SectionThree } from './components/sections/section3';
+import { SectionFour } from './components/sections/section4';
+import { SectionFifth } from './components/sections/section5';
+import { SectionSeven } from './components/sections/section7';
+import { SectionNine } from './components/sections/section9';
+import { SectionTen } from './components/sections/section10';
+import { Footer } from './components/footers';
+import { SectionSix } from './components/sections/section6';
+import { SectionEight } from './components/sections/section8';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFifth />
+      <SectionSix />
+      <SectionSeven />
+      <SectionEight />
+      <SectionNine />
+      <SectionTen />
+      <Footer />
     </div>
   );
 }
